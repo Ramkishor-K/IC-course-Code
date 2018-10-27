@@ -26,14 +26,13 @@ s_train = s_data[0:18]
 x_train = x_data[0:18]
 y_train = y_data[0:18]
 
-test_height = 161
-test_weight = 61
+test_height = 140
+test_weight = 49
 z = np.sqrt(np.square(x_train - test_height) + np.square(y_train - test_weight))
 print(z)
-mini = np.min(z)    
-print(mini)  
-b = z  
-print(b[1])
+mini = np.min(z) 
+print(mini)
+b = z
 z = sorted(z)
 for index in range(0,18):
     if(mini == b[index]):
